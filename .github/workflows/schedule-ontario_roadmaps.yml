@@ -1,7 +1,7 @@
 name: Update Ontario road map
-on:
-  schedule:
-    - cron: 0 0/1 * * *
+on:  [push]
+  #schedule:
+   # - cron: 0 0/1 * * *
 
 jobs:
   update_map:
