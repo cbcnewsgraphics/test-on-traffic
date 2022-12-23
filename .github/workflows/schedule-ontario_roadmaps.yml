@@ -1,7 +1,7 @@
 name: Update Ontario road map
 on:  
   schedule:
-    - cron: "*/15 * * * *"
+    - cron: 0 */4 * * *
 jobs:
   update_map:
     runs-on: ubuntu-20.04
@@ -23,7 +23,6 @@ jobs:
       - name: Chart update and publish
         env: 
             DW_AUTH_TOKEN: ${{ secrets.DW_AUTH_TOKEN }}
-        run: |
-          python3 on_traffic.py
-          python3 south-traffic.py
+        run: python3 on_traffic.py
+      
         
