@@ -1,4 +1,4 @@
-name: Update Ontario road map
+name: Update Ontario-south road map
 on:  
   schedule:
     - cron: 0 */4 * * *
