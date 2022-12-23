@@ -16,7 +16,7 @@ data["markerColor"] = "#C42127"
 
 roadmap = (datawrappergraphics.Map(CHART_ID)
             .data(data, append="./assets/shapes/shapes-ontarioflooding.json")
-            .head(f"Northern Ontario road closures due to flooding")
+            .head(f"Northern Ontario road closures")
             .deck(f"Tap or hover over a red icon to read more about the closure.")
             .footer(source="Ontario 511", byline = False)
             .publish()
