@@ -1,7 +1,7 @@
 name: Update Ontario road map
 on:  
   schedule:
-    - cron: 0 */4 * * *
+    - cron: 0 5 * * *
 jobs:
   update_map:
     runs-on: ubuntu-20.04
